@@ -1,1 +1,91 @@
 /* Header */
+nav {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.header-div {
+  height: 300px;
+  background-color: #4059ad;
+}
+
+.header-div h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+  margin: 0;
+  padding-top: 80px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inter", sans-serif;
+}
+
+.main-wrapper {
+  height: 400px;
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.resources-div {
+  height: 250px;
+  background-color: #f4b942;
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.resources-text {
+  flex: 1;
+}
+
+.resources-links {
+  margin-right: 20px;
+}
+
+.resources-links ul {
+  list-style-type: none;
+}
+
+.resources-links a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+footer {
+  background-color: #6b9ac4;
+  height: 50px;
+  font-family: "Inter", sans-serif;
+}
+
+.contact-div {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.contact-div a {
+  text-decoration: none;
+  padding-left: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.contact-div i {
+  padding-left: 10px;
+}
