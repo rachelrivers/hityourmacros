@@ -40,82 +40,88 @@
         </p>
       </div>
 
-      <div class="main-search">
+      <section>
+      <div id="mainContainer" class="main-container">
         <!--HERE is where the main search/API results should appear.-->
+        <form id="form" class="main-form">
+          <i class="fas fa-search searchicon"></i>
+          <input type="text" placeholder="Search Recipe" />
+        </form>
+      <div id="results" class="search-results">
+        <!-- <div class="item">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=700%2C636"
+            alt="recipe image"
+          />
+          <div class="flex-container">
+            <h2 class="recipe-title">Recipe Title</h2>
+            <a class="view-recipe" href="#">View Recipe</a>
+          </div>
+          <p class="calories">Calories: 120</p>
+          <p class="protein">Protein: 12G</p>
+          <p class="carbs">Carbohydrates: 20G</p>
+        </div>
+        -->
 
-        <label class="container"
-          >Protein
-          <input type="checkbox" checked="checked" />
-          <span class="checkmark"></span>
-        </label>
-
-        <label class="container"
-          >Carbs
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-        </label>
-
-        <label class="container"
-          >Keto-Friendly
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-        </label>
-
-        <label class="container"
-          >TBD
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-        </label>
+        <!-- search results end-->
       </div>
+      <!-- main container ends-->
     </div>
+    </section>
 
-    <div class="resources-div">
-      <div class="resources-text">
-        <h2>Resources</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laborum
-          nisi hic deleniti placeat repellendus voluptatibus et, magnam fuga.
-          Iusto, omnis nobis sint architecto eaque aperiam tempora quo sapiente
-          temporibus.
-        </p>
-      </div>
+    <div class="resources-section">
+      <button class="#resourcesButton">Resources</button>
+      <div id="toggleResources" class="resources-div">
+        <div class="resources-text" id="resourcesHide">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            laborum nisi hic deleniti placeat repellendus voluptatibus et,
+            magnam fuga. Iusto, omnis nobis sint architecto eaque aperiam
+            tempora quo sapiente temporibus.
+          </p>
+        </div>
 
-      <div class="resources-links">
-        <ul>
-          <li>
-            <a href="https://tdeecalculator.net/" target="_blank"
-              >TDEE calculator</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.healthline.com/nutrition/how-to-count-macros#step-by-step"
-              target="_blank"
-              >how to count macros</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://mynutrition.wsu.edu/nutrition-basics"
-              target="_blank"
-              >nutrition basics</a
-            >
-          </li>
-          <li>
-            <a href="https://www.reddit.com/r/loseit/" target="_blank"
-              >r/loseit</a
-            >
-          </li>
-        </ul>
+        <div class="resources-links">
+          <ul>
+            <li>
+              <a href="https://tdeecalculator.net/" target="_blank"
+                >TDEE calculator</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.healthline.com/nutrition/how-to-count-macros#step-by-step"
+                target="_blank"
+                >how to count macros</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://mynutrition.wsu.edu/nutrition-basics"
+                target="_blank"
+                >nutrition basics</a
+              >
+            </li>
+            <li>
+              <a href="https://www.reddit.com/r/loseit/" target="_blank"
+                >r/loseit</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
 
   <footer>
     <div class="contact-div">
-      <i class="fab fa-github"></i>
-      <i class="fab fa-linkedin-in"></i>
-      <a href="#">Contact</a>
+      <button>Contact</button>
+      <div class="hide-icons" id="icons">
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
     </div>
   </footer>
+
+  <script src="js/main.js" defer></script>
 </html>
