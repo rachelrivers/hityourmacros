@@ -46,7 +46,7 @@ h5 {
 
 form {
   width: 90%;
-  max-width: 400px;
+  max-width: 700px;
   margin: 20px auto;
   border-radius: 5px;
   border: solid 3px rgba(0, 0, 0, 0.274);
@@ -66,6 +66,31 @@ form input {
   font-size: 2rem;
   color: rgba(0, 0, 0, 0.404);
 }
+
+/*check boxes*/
+
+.diet-select {
+  display: Flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.diet-select input {
+  cursor: pointer;
+}
+
+.checkmark {
+  background-color: #eee;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.diet-select:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* results*/
 
 .flex-container {
   display: flex;
@@ -124,9 +149,13 @@ form input {
   padding: 30px;
   font-family: "Inter", sans-serif;
 }
+
+/* #resourcesDiv {
+  display: none;
+} */
+
 .resources-div {
   /* display: grid; */
-  display: none;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
@@ -164,9 +193,9 @@ footer {
   font-family: "Inter", sans-serif;
 }
 
-.hide-icons {
+/* .hide-icons {
   display: none;
-}
+} */
 
 /*FIX*/
 
