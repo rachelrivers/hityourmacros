@@ -43,7 +43,7 @@ h5 {
   padding: 30px;
   font-family: "Inter", sans-serif;
   min-height: calc(100vh - 40px);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .main-text {
@@ -186,7 +186,7 @@ form input {
 #resourcesDiv.open {
   max-height: 1000px;
 
-  transition: max-height 0.7s;
+  transition: 0.7s;
 }
 
 .resources-links ul {
@@ -198,6 +198,7 @@ form input {
   font-size: 30px;
   font-family: "Inter", sans-serif;
   color: #4059ad;
+  transition: 0.7s;
 }
 
 .resources-links a:hover {
@@ -226,6 +227,7 @@ footer {
 
 .icons a {
   color: black;
+  transition: 0.7s;
 }
 
 .icons a:hover {
