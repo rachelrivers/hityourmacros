@@ -49,6 +49,23 @@ function generateAPIData(results) {
 }
 
 
+//resources 
+
+//button events 
+
+const button = document.querySelector('button');
+const showResources = document.querySelector("#resourcesDivShow");
+
+showResources.style.display = 'none'; 
+
+button.onclick = () => {
+  if (showResources.style.display === 'none') {
+   showResources.style.display = 'block'; 
+  } else {
+    showResources.style.display = 'none'; 
+  }
+};
+
 
 
 //end IIFE

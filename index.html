@@ -28,26 +28,29 @@
       <div class="main-text">
         <h2>Recipe Search</h2>
         <p>
-          <b>Find recipes to help you hit your macros.</b> Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Similique consequatur soluta magni
-          inventore minima voluptatem iusto necessitatibus, perferendis
-          cupiditate dignissimos labore? Quisquam laborum vero magnam
-          architecto. Vel labore nesciunt consequuntur. Lorem, ipsum dolor sit
-          amet consectetur adipisicing elit. Distinctio consectetur enim,
-          repellendus praesentium, doloribus ab eaque quaerat repudiandae eos
-          officia sunt impedit tempore cum, qui pariatur perferendis dolores?
-          Quod, error. Placeholder until the API content is here.
+          Use the the form below to search for recipes. Up to twenty recipe
+          cards will be displayed depending on your search input. Each of these
+          cards will display amounts for the three macronutrient categories:
+          <b>proteins</b>, <b>carbohydrates</b>, and <b>fats</b>. Click "view
+          recipe" to visit the webpage where you can find the full recipe.
+          Personally, I find it difficult to hit the recommended amount of
+          protein when tracking my macros so by default the search will display
+          recipes with high amounts of protein. The calories are displayed as
+          well if you are tracking those too.
         </p>
       </div>
 
       <section>
-      <div id="mainContainer" class="main-container">
-        <!--HERE is where the main search/API results should appear.-->
-        <form id="form" class="main-form">
-          <i class="fas fa-search searchicon"></i>
-          <input type="text" placeholder="Search Low-Fat, High-Protein Recipes" />
-        </form>
-        <!-- <div class="diet-select">
+        <div id="mainContainer" class="main-container">
+          <!--HERE is where the main search/API results should appear.-->
+          <form id="form" class="main-form">
+            <i class="fas fa-search searchicon"></i>
+            <input
+              type="text"
+              placeholder="Search Low-Fat, High-Protein Recipes"
+            />
+          </form>
+          <!-- <div class="diet-select">
           <label class="diet-container" id="highProtein">High Protein
             <input type="radio" checked="checked" name="radio">
             <span class="checkmark"></span>
@@ -57,8 +60,8 @@
             <span class="checkmark"></span>
           </label>
         </div> -->
-      <div id="results" class="search-results"> 
-        <!-- <div class="item">
+          <div id="results" class="search-results">
+            <!-- <div class="item">
           <img
             src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=700%2C636"
             alt="recipe image"
@@ -74,24 +77,24 @@
        
 
       <!-search results end-->
-      </div>
-      <!-- main container ends-->
-    </div>
-    </section>
-
-    <div class="resources-section">
-      <h1>Resources.</h1>
-      <div id="resourcesDiv" class="resources-div">
-        <div class="resources-text" id="resourcesHide">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-            laborum nisi hic deleniti placeat repellendus voluptatibus et,
-            magnam fuga. Iusto, omnis nobis sint architecto eaque aperiam
-            tempora quo sapiente temporibus.
-          </p>
+          </div>
+          <!-- main container ends-->
         </div>
+      </section>
 
-        <div class="resources-links">
+      <div class="resources-section">
+        <div id="resourcesDiv" class="resources-div">
+          <h2>Resources</h2>
+          <p>
+            If you are interested in learning more about tracking macros here
+            are some helpful resources, including the handy TDEE (Total Daily
+            Energy Expenditure) calculator. I also included a few links to my
+            favorite food sources on the web. Enjoy!
+          </p>
+
+          <button id="toggleResources">Show More</button>
+        </div>
+        <div id="resourcesDivShow" class="resources-links">
           <ul>
             <li>
               <a href="https://tdeecalculator.net/" target="_blank"
@@ -106,15 +109,18 @@
               >
             </li>
             <li>
-              <a
-                href="https://mynutrition.wsu.edu/nutrition-basics"
-                target="_blank"
-                >nutrition basics</a
+              <a href="https://www.reddit.com/r/loseit/" target="_blank"
+                >r/loseit</a
               >
             </li>
             <li>
-              <a href="https://www.reddit.com/r/loseit/" target="_blank"
-                >r/loseit</a
+              <a href="https://masonfit.com/" target="_blank"
+                >Kinda Healthy Recipes</a
+              >
+            </li>
+            <li>
+              <a href="https://workweeklunch.com/" target="_blank"
+                >Work Week Lunch</a
               >
             </li>
           </ul>
@@ -125,10 +131,16 @@
 
   <footer>
     <div class="contact-div">
-      <b>Contact</b>
-      <div class="hide-icons" id="icons">
-        <i class="fab fa-github"></i>
-        <i class="fab fa-linkedin-in"></i>
+      <b>Contact me if you want to talk code or carbs.&nbsp</b>
+      <div class="icons">
+        <a href="https://github.com/rachelrivers" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/rachel-rivers-16a026118/"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
       </div>
     </div>
   </footer>
