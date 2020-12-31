@@ -5,13 +5,13 @@
   const container = document.querySelector("#mainContainer");
 
   let searchQuery = "";
-  const APP_ID = '8edc38ff';
-  const APP_key = "08c811cb469279c8c1741585a4673f31";
+  const API_ID = '8edc38ff';
+  const API_key = "08c811cb469279c8c1741585a4673f31";
 
+  //Hide API keys:
+  //const API_ID = config.API_ID;
+  //const API_key = config.API_KEY;
 
-  // console.log(searchForm);
-  // console.log(searchResultDiv);
-  // console.log(mainContainer);
   //search input
 
   searchForm.addEventListener('submit', (e) => {
@@ -21,7 +21,7 @@
   });
 
   async function fetchAPI() {
-    const pathURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}&from=0&to=20&diet=low-fat&diet=high-protein	`;
+    const pathURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${API_ID}&app_key=${API_key}&from=0&to=20&diet=low-fat&diet=high-protein	`;
     const response = await fetch(pathURL);
     const data = await response.json();
     generateAPIData(data.hits);
@@ -49,9 +49,7 @@
   }
 
 
-  //resources 
-
-  //button events 
+ //button toggle events 
 
   const button = document.querySelector('button');
   const showResources = document.querySelector("#resourcesDivShow");
@@ -61,8 +59,10 @@
   button.onclick = () => {
     if (showResources.style.display === 'none') {
       showResources.style.display = 'block';
+      button.innerHTML = "Show Less";
     } else {
       showResources.style.display = 'none';
+      button.innerHTML = "Show More";
     }
   };
 
