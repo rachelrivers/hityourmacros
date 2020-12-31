@@ -1,4 +1,4 @@
-## Hit Your Macros!
+## Hit Your Macros
 
 Final project for Javascript Fundamentals Fall 2020 class with [Albany Can Code](https://albanycancode.org/). The project goal was to take what we learned in class and leverage an API to display dynamic content onto a webpage.
 
