@@ -1,6 +1,6 @@
 ## Hit Your Macros!
 
-Final project for Javascript Fundamentals Fall 2020 class with [Albany Can Code]https://albanycancode.org/. The project goal was to take what we learned in class and leverage an API to display dynamic content onto a webpage.
+Final project for Javascript Fundamentals Fall 2020 class with [Albany Can Code](https://albanycancode.org/). The project goal was to take what we learned in class and leverage an API to display dynamic content onto a webpage.
 
 For this project I created a nutrition/recipe search page using [Edamam](https://developer.edamam.com/). It displays the calories and macronutrients of the recipe in the results, which saves you having to find that information on the recipe's URL inbetween all of the text, links, and advertisements! 
 
