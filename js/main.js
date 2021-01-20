@@ -15,8 +15,8 @@ const searchedForm = () => {
 searchedForm();
 
 //DOMpurify to sanitize HTML 
- const cleanData = (generatedData) => {
-  DOMPurify.sanitize(generatedData)
+ const cleanData = (results) => {
+  DOMPurify.sanitize(results)
  };
   
   //API functions
@@ -45,9 +45,9 @@ searchedForm();
      <p class="protein">Protein: ${result.recipe.digest[2].total.toFixed(2)}</p>
      <p class="carbs">Carbohydrates: ${result.recipe.digest[1].total.toFixed(2)}</p>
     </div>`;
+    cleanData();
       });
       searchResultDiv.innerHTML = generatedData;
-      cleanData(); 
    }
   
 
