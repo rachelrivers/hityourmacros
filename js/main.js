@@ -14,11 +14,15 @@ const searchedForm = () => {
 };
 searchedForm();
 
-//DOMpurify to sanitize HTML 
- const cleanData = (results) => {
-  DOMPurify.sanitize(results)
- };
-  
+//Sanitize HTML 
+input = document.querySelector('input');
+const userInput = input.value; 
+
+const safeData = () => {
+filterXSS(userInput);; 
+};
+safeData();
+
   //API functions
   async function fetchAPI() {
     const API_ID = '8edc38ff';
@@ -45,7 +49,6 @@ searchedForm();
      <p class="protein">Protein: ${result.recipe.digest[2].total.toFixed(2)}</p>
      <p class="carbs">Carbohydrates: ${result.recipe.digest[1].total.toFixed(2)}</p>
     </div>`;
-    cleanData();
       });
       searchResultDiv.innerHTML = generatedData;
    }
