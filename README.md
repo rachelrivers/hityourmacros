@@ -1,8 +1,10 @@
-## Hit Your Macros!
+## Hit Your Macros
 
-Final project for Javascript Fundamentals Fall 2020 class with Albany Can Code. The project goal was to take what we learned in class and leverage an API to display dynamic content onto a webpage.
+[Demo](https://rachelrivers.github.io/hityourmacros/)
 
-For this project I created a nutrition/recipe search page using [Edamam](https://developer.edamam.com/).
+Final project for Javascript Fundamentals Fall 2020 class with [Albany Can Code](https://albanycancode.org/). The project goal was to take what we learned in class and leverage an API to display dynamic content onto a webpage.
+
+For this project I created a nutrition/recipe search page using [Edamam](https://developer.edamam.com/). It displays the calories and macronutrients of the recipe in the results, which saves you the trouble of finding that information on the recipe's URL inbetween all of the text, pop-ups, and advertisements!
 
 ## Usage
 
@@ -16,5 +18,4 @@ The Edamam API used for this project is the [Recipe Search API](https://develope
 ## Contact
 
 Rachel Rivers - https://github.com/rachelrivers
-
 Project link - https://github.com/rachelrivers/hityourmacros
