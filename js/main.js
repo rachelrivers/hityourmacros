@@ -8,7 +8,8 @@
 const searchedForm = () => { 
   searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    searchQuery = e.target.querySelector('input').value;
+    searchQuery = 
+    filterXSS(e.target.querySelector('input').value);
     fetchAPI();
   });
 };
@@ -18,10 +19,10 @@ searchedForm();
 input = document.querySelector('input');
 const userInput = input.value; 
 
-const safeData = () => {
-filterXSS(userInput);; 
-};
-safeData();
+// const safeData = () => {
+// filterXSS(userInput);; 
+// };
+// safeData();
 
   //API functions
   async function fetchAPI() {
